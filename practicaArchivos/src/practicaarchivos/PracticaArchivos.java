@@ -1,11 +1,9 @@
 package practicaarchivos;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
-public class PracticaArchivos {
+public class PracticaArchivos {  ///CLASES FILE, FILEREADER, FILEWRITER
 
     public static void main(String[] args) {
         try {
