@@ -1,6 +1,6 @@
 package poo1;
 public class Vehiculo {
-    String color;
+    private String color;
     int velocidad;
     int traccion;
     
@@ -8,7 +8,7 @@ public class Vehiculo {
         this.color=color;
         this.velocidad=velocidad;
         this.traccion=traccion;
-        System.out.println( "El color es: "+color+"\nLa velocidad es: "+velocidad+"\nLa traccion es: "+traccion);
+        //System.out.println( "El color es: "+color+"\nLa velocidad es: "+velocidad+"\nLa traccion es: "+traccion);
     }
     public void subirVelocidad(){
         System.out.println("Subir velocidad");
@@ -21,11 +21,17 @@ public class Vehiculo {
     }
     public void validarVehiculo(int llantas){
         if(llantas==2){
-            System.out.println("moto");
+            System.out.println("Es moto");
         }
         else{
-            System.out.println("carro");
+            System.out.println("Es carro");
         
         }
+    }
+    public void setColor(String col){
+        color=col; 
+    }
+    public String getColor(){
+        return color;
     }
 }
