@@ -6,10 +6,11 @@ import java.util.Scanner;
 public class MateriaEstDiscrtArrays {
 
     public static void main(String[] args) {
-        Scanner put = new Scanner(System.in);
+        
         int a[] = new int[10];
         
         /*//////////////////////
+        Scanner put = new Scanner(System.in);
         for (int i = 0; i < 10; i++) {
             a[i]=put.nextInt();
         }
@@ -53,6 +54,33 @@ public class MateriaEstDiscrtArrays {
             a[a.length-1]=0;
         }
     }
+    public static int[] ordenar(int a[]){
+        int aux;
+        int aOrdenado[];
+        for (int i = 1; i < a.length; i++) {
+            for (int j = 0; j < 10; j++) {
+                if(a[j]>a[j+1]){
+                    aux=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=aux;
+                }
+            }
+        }
+        aOrdenado=a;
+        return aOrdenado;
+    }
+    /*
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    
+    -
+    */
     public static void llenar(int a[]){
         for (int i = 0; i < 10; i++) {
             int random=(int)(Math.random()*(0-10)+10);
